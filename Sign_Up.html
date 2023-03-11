@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign Up</title>
+    <style>
+        body{
+            background-image: url(pexels-irina-iriser-1379640.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        fieldset{
+            margin: 0 auto;
+            background-color: rgb(255, 255, 255);
+            border-radius: 20px;
+            width: 40%;
+            border: none;
+        }
+
+        input[type=text],[type=password],[type=email],[type=date]{
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid gray;
+            border-radius: 5px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            width: 90%;
+        }
+
+        select{
+            color: black;
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid gray;
+            border-radius: 5px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            width: 94%;
+        }
+
+        label{
+            margin-left: 25px;
+            color: gray;
+        }
+
+        legend{
+            text-align: center;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        input[type=submit]{
+            padding: 5px;
+            width: 30%;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            background-color: gray;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+        a {
+            padding: 5px;
+            width: 30%;
+            margin-left: 10px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            color: none;
+            color: gray;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        option{
+            color: gray;
+        }
+
+
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <br>
+            <fieldset>
+                <legend>Pendaftaran Akun</legend>
+            </fieldset>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" required><br>
+
+        <label for="tanggal_lahir">Tanggal Lahir:</label>
+        <input type="date" id="tanggal_lahir" name="tanggal_lahir" required><br>
+        
+        <label for="jenis_kelamin">jenis_kelamin:</label><br>
+        <select name="jenis_kelamin" id="jenis_kelamin" required>
+            <option value="Menolak_Berikan">Menolak Berikan</option>
+            <option value="Laki_Laki">Laki-Laki</option>
+            <option value="Perempuan">Perempuan</option>
+        </select><br>
+        
+        <label for="nohp">Nomor Hanphone / Whatsapp:</label>
+        <input type="text" id="nohp" name="nohp" required><br>
+      
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+      
+        <label for="konfirmasi_password">Konfirmasi Password:</label>
+        <input type="password" id="konfirmasi_password" name="konfirmasi_password" required><br>
+      
+        <input type="submit" value="Daftar"><br>
+        <a href="Halaman_Login.html">
+            Sign in
+        </a>
+        </fieldset>
+      </form>
+      
+</body>
+</html>
